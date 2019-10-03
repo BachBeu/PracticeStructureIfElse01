@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doanhso = parseInt(prompt("Nhập doanh số bán hàng: "));
+    let hoahong;
+    if(doanhso >= 500000){
+        hoahong = doanhso * 0.1;
+        alert("Số hoa hồng bạn nhận được là : " + hoahong);
+    }else if(doanhso >= 200000){
+        hoahong = doanhso * 0.05;
+        alert("Số hoa hồng bạn nhận được là : " + hoahong);
+    }else {
+        hoahong = doanhso * 0.01;
+        alert("Số hoa hồng bạn nhận được là : " + hoahong);
+    }
+</script>
+</body>
+</html>

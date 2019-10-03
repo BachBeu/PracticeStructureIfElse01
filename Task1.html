@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="s1" type="text" style="width: 200px; height: 15px" placeholder="Nhập số thứ nhất">
+<input id="s2" type="text" style="width: 200px; height: 15px" placeholder="Nhập số thứ hai">
+<button type="button" onclick="showMessage()">Click me!</button>
+<script>
+    function showMessage() {
+        let a = parseInt(document.getElementById('s1').value);
+        let b = parseInt(document.getElementById('s2').value);
+        if(a % b == 0){
+            alert("Số" + a + " chia hết cho số " + b);
+        }else{
+            alert("Số" + a + " Không chia hết cho số " + b);
+        }
+
+    }
+</script>
+</body>
+</html>

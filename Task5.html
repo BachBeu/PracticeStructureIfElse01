@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("nhập số điểm kiểm tra: "));
+    let b = parseFloat(prompt("nhập số điểm kiểm tra giữa kỳ: "));
+    let c = parseFloat(prompt("nhập số điểm kiểm tra cuối kỳ: "));
+    d = (a + (b*2) + (c*3))/6;
+
+    if(d >= 8){
+        alert("Học sinh xếp loại giỏi");
+    }else if(d >=6.5){
+        alert("Học sinh xếp loại khá");
+    }else if(d >= 5){
+        alert("Học sinh xếp loại trung bình");
+    }else{
+        alert("Học sinh xếp loại kém");
+    }
+</script>
+</body>
+</html>

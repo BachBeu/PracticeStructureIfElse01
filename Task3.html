@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="number" type="text" style="width: 200px; height: 15px" placeholder="mời bạn nhập một sô bất kỳ">
+<button type="button" onclick="showMessage()">Submit!</button>
+<script>
+    function showMessage(){
+        let a = parseInt(document.getElementById('number').value);
+        if(a > 0){
+            alert( a + " Là số lớn hơn 0");
+        }else{
+            alert( a + " là số nhỏ hơn 0");
+        }
+    }
+</script>
+</body>
+</html>
